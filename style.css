@@ -1,0 +1,164 @@
+/* ==========================================================================
+   VARIÁVEIS GERAIS E PALETA DE CORES (IDENTIDADE VISUAL AGRINHO)
+   ========================================================================== */
+:root {
+    --primary-color: #2e7d32;     /* Verde Principal - Representa o Agro */
+    --secondary-color: #81c784;   /* Verde Claro - Sustentabilidade e Destaques */
+    --accent-color: #ffb74d;      /* Laranja/Ouro - Tecnologia e Insumos */
+    --dark-color: #1b5e20;        /* Verde Escuro - Textos Fortes e Rodapé */
+    --light-color: #f1f8e9;       /* Fundo de Tela - Conforto Visual */
+    --text-color: #333333;        /* Cor Padrão de Textos Escuros */
+}
+
+/* ==========================================================================
+   RESET E CONFIGURAÇÕES GERAIS
+   ========================================================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: var(--light-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+/* ==========================================================================
+   CABEÇALHO (HEADER) -BANNER DO CONCURSO
+   ========================================================================== */
+header {
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
+                url('https://unsplash.com') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 4rem 1rem;
+    border-bottom: 5px solid var(--primary-color);
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+header p {
+    font-size: 1.2rem;
+    color: var(--secondary-color);
+    font-weight: bold;
+}
+
+/* ==========================================================================
+   LAYOUT E ESTRUTURA CONTAINER
+   ========================================================================== */
+.container {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+/* Caixa de Introdução do Projeto */
+.intro-box {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    margin-bottom: 2rem;
+    border-left: 6px solid var(--primary-color);
+}
+
+.intro-box h2 {
+    color: var(--dark-color);
+    margin-bottom: 1rem;
+}
+
+/* ==========================================================================
+   SELETOR DE MINIGAMES (GRID CARDS)
+   ========================================================================== */
+.game-selector {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.game-card {
+    background: white;
+    border: 2px solid #e0e0e0;
+    border-radius: 10px;
+    padding: 1.5rem;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* Efeito Hover e Estado Ativo do Card do Jogo */
+.game-card:hover, 
+.game-card.active {
+    border-color: var(--primary-color);
+    background-color: #e8f5e9;
+    transform: translateY(-3px);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.game-card h3 {
+    color: var(--dark-color);
+    margin-bottom: 0.5rem;
+}
+
+/* ==========================================================================
+   ÁREA DO GAME CANVAS (INTERFACE DO JOGO)
+   ========================================================================== */
+#canvas-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #222222;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+    min-height: 450px;
+    position: relative;
+}
+
+/* Caixa de Instruções Dinâmicas */
+#game-instructions {
+    color: #ffffff;
+    background: rgba(0,0,0,0.5);
+    padding: 0.8rem;
+    border-radius: 6px;
+    margin-bottom: 1rem;
+    text-align: center;
+    max-width: 600px;
+    font-size: 0.95rem;
+    border: 1px solid var(--secondary-color);
+}
+
+/* Centralização automática do Canvas gerado pelo P5.js */
+#canvas-container canvas {
+    border-radius: 6px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    max-width: 100%;
+    height: auto !important; /* Mantém a proporção em telas pequenas */
+}
+
+/* ==========================================================================
+   RODAPÉ (FOOTER)
+   ========================================================================== */
+footer {
+    background-color: var(--dark-color);
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 4rem;
+    font-size: 0.9rem;
+}
+
+footer a {
+    color: var(--secondary-color);
+    text-decoration: none;
+}
