@@ -1,18 +1,12 @@
-/* ==========================================================================
-   VARIÁVEIS GERAIS E PALETA DE CORES (IDENTIDADE VISUAL AGRINHO)
-   ========================================================================== */
 :root {
-    --primary-color: #2e7d32;     /* Verde Principal - Representa o Agro */
-    --secondary-color: #81c784;   /* Verde Claro - Sustentabilidade e Destaques */
-    --accent-color: #ffb74d;      /* Laranja/Ouro - Tecnologia e Insumos */
-    --dark-color: #1b5e20;        /* Verde Escuro - Textos Fortes e Rodapé */
-    --light-color: #f1f8e9;       /* Fundo de Tela - Conforto Visual */
-    --text-color: #333333;        /* Cor Padrão de Textos Escuros */
+    --primary-color: #2e7d32;     
+    --secondary-color: #81c784;   
+    --accent-color: #ffb74d;      
+    --dark-color: #1b5e20;        
+    --light-color: #f1f8e9;       
+    --text-color: #333333;        
 }
 
-/* ==========================================================================
-   RESET E CONFIGURAÇÕES GERAIS
-   ========================================================================== */
 * {
     margin: 0;
     padding: 0;
@@ -26,9 +20,6 @@ body {
     line-height: 1.6;
 }
 
-/* ==========================================================================
-   CABEÇALHO (HEADER) -BANNER DO CONCURSO
-   ========================================================================== */
 header {
     background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
                 url('https://unsplash.com') no-repeat center center/cover;
@@ -51,16 +42,12 @@ header p {
     font-weight: bold;
 }
 
-/* ==========================================================================
-   LAYOUT E ESTRUTURA CONTAINER
-   ========================================================================== */
 .container {
     max-width: 1200px;
     margin: 2rem auto;
     padding: 0 1rem;
 }
 
-/* Caixa de Introdução do Projeto */
 .intro-box {
     background: white;
     padding: 2rem;
@@ -75,9 +62,6 @@ header p {
     margin-bottom: 1rem;
 }
 
-/* ==========================================================================
-   SELETOR DE MINIGAMES (GRID CARDS)
-   ========================================================================== */
 .game-selector {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -95,7 +79,6 @@ header p {
     transition: all 0.3s ease;
 }
 
-/* Efeito Hover e Estado Ativo do Card do Jogo */
 .game-card:hover, 
 .game-card.active {
     border-color: var(--primary-color);
@@ -109,9 +92,6 @@ header p {
     margin-bottom: 0.5rem;
 }
 
-/* ==========================================================================
-   ÁREA DO GAME CANVAS (INTERFACE DO JOGO)
-   ========================================================================== */
 #canvas-container {
     display: flex;
     flex-direction: column;
@@ -125,7 +105,6 @@ header p {
     position: relative;
 }
 
-/* Caixa de Instruções Dinâmicas */
 #game-instructions {
     color: #ffffff;
     background: rgba(0,0,0,0.5);
@@ -138,17 +117,13 @@ header p {
     border: 1px solid var(--secondary-color);
 }
 
-/* Centralização automática do Canvas gerado pelo P5.js */
 #canvas-container canvas {
     border-radius: 6px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.3);
     max-width: 100%;
-    height: auto !important; /* Mantém a proporção em telas pequenas */
+    height: auto !important;
 }
 
-/* ==========================================================================
-   RODAPÉ (FOOTER)
-   ========================================================================== */
 footer {
     background-color: var(--dark-color);
     color: white;
@@ -156,9 +131,4 @@ footer {
     padding: 1.5rem;
     margin-top: 4rem;
     font-size: 0.9rem;
-}
-
-footer a {
-    color: var(--secondary-color);
-    text-decoration: none;
 }
