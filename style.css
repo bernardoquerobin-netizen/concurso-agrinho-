@@ -474,3 +474,6 @@ height:auto;
 }
 
 }
+.btn-secondary{
+    display:none !important;
+}
