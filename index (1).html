@@ -4,17 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Agrinho 2026 - Ensino Médio</title>
-    <!-- Vinculo corrigido para o GitHub -->
-    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Estilos CSS Integrados */
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, sans-serif; }
+        :root { --cor-principal: #2e7d32; --cor-escura: #1b5e20; --cor-texto: #333333; --cor-fundo-claro: #f4f9f4; --cor-destaque: #d84315; }
+        html { scroll-behavior: smooth; }
+        body { color: var(--cor-texto); line-height: 1.6; background-color: #ffffff; }
+        .container { width: 90%; max-width: 1200px; margin: 0 auto; }
+        .secao { padding: 60px 0; }
+        .fundo-claro { background-color: var(--cor-fundo-claro); }
+        .titulo-secao { text-align: center; font-size: 2.2rem; color: var(--cor-escura); margin-bottom: 30px; }
+        header { background-color: #ffffff; box-shadow: 0 2px 5px rgba(0,0,0,0.1); position: sticky; top: 0; z-index: 1000; padding: 15px 0; }
+        .header-flex { display: flex; justify-content: space-between; align-items: center; }
+        .logo h1 { color: var(--cor-principal); font-size: 1.6rem; }
+        .logo span { color: var(--cor-destaque); }
+        .nav-links { display: flex; list-style: none; gap: 15px; }
+        .nav-links a { text-decoration: none; color: var(--cor-texto); font-weight: bold; }
+        .hero { background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://unsplash.com') no-repeat center center/cover; height: 60vh; display: flex; align-items: center; text-align: center; color: white; }
+        .hero-content h2 { font-size: 2.8rem; margin-bottom: 15px; }
+        .btn-principal { display: inline-block; background-color: var(--cor-destaque); color: white; padding: 12px 30px; text-decoration: none; border-radius: 25px; font-weight: bold; margin-top: 15px; }
+        .texto-destaque { text-align: center; margin-bottom: 40px; font-size: 1.1rem; }
+        .cards-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
+        .card { background: white; padding: 25px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.05); border-top: 4px solid var(--cor-principal); }
+        .linha-tempo { display: flex; flex-direction: column; gap: 15px; max-width: 500px; margin: 0 auto; }
+        .item-tempo { display: flex; background: white; padding: 15px; border-radius: 6px; align-items: center; gap: 15px; box-shadow: 0 2px 5px rgba(0,0,0,0.05); }
+        .data { background: var(--cor-principal); color: white; padding: 5px 10px; border-radius: 15px; font-weight: bold; font-size: 0.8rem; min-width: 110px; text-align: center; }
+        .formulario { max-width: 500px; margin: 0 auto; background: var(--cor-fundo-claro); padding: 30px; border-radius: 6px; }
+        .grupo-campo { margin-bottom: 15px; display: flex; flex-direction: column; }
+        .grupo-campo label { margin-bottom: 5px; font-weight: bold; }
+        .grupo-campo input, .grupo-campo select, .grupo-campo textarea { padding: 10px; border: 1px solid #ccc; border-radius: 4px; }
+        #contador-caracteres { font-size: 0.8rem; text-align: right; color: #666; }
+        .btn-enviar { background: var(--cor-principal); color: white; border: none; padding: 12px; width: 100%; border-radius: 4px; font-weight: bold; cursor: pointer; }
+        #mensagem-sucesso { background: #d4edda; color: #155724; padding: 15px; text-align: center; border-radius: 4px; margin-top: 15px; }
+        .escondido { display: none; }
+        footer { background: #222; color: white; text-align: center; padding: 20px 0; margin-top: 40px; }
+        @media (max-width: 768px) { .header-flex { flex-direction: column; gap: 10px; } .hero-content h2 { font-size: 1.8rem; } .item-tempo { flex-direction: column; text-align: center; } }
+    </style>
 </head>
 <body>
 
-    <!-- Menu -->
     <header>
         <div class="container header-flex">
-            <div class="logo">
-                <h1>Agrinho <span>2026</span></h1>
-            </div>
+            <div class="logo"><h1>Agrinho <span>2026</span></h1></div>
             <nav>
                 <ul class="nav-links">
                     <li><a href="#inicio">Início</a></li>
@@ -26,7 +57,6 @@
         </div>
     </header>
 
-    <!-- Banner -->
     <section id="inicio" class="hero">
         <div class="container hero-content">
             <h2>Inovação e Sustentabilidade no Campo</h2>
@@ -35,12 +65,10 @@
         </div>
     </section>
 
-    <!-- Sobre -->
     <section id="sobre" class="secao">
         <div class="container">
             <h2 class="titulo-secao">Sobre o Concurso</h2>
             <p class="texto-destaque">O Programa Agrinho 2026 incentiva alunos do Ensino Médio a desenvolverem soluções criativas para o meio rural.</p>
-            
             <div class="cards-grid">
                 <div class="card">
                     <h3>🌱 Sustentabilidade</h3>
@@ -58,36 +86,21 @@
         </div>
     </section>
 
-    <!-- Cronograma -->
     <section id="cronograma" class="secao fundo-claro">
         <div class="container">
             <h2 class="titulo-secao">Cronograma Oficial</h2>
             <div class="linha-tempo">
-                <div class="item-tempo">
-                    <span class="data">Março - Junho</span>
-                    <p>Desenvolvimento dos projetos nas escolas.</p>
-                </div>
-                <div class="item-tempo">
-                    <span class="data">Julho</span>
-                    <p>Prazo final para envio dos trabalhos.</p>
-                </div>
-                <div class="item-tempo">
-                    <span class="data">Outubro</span>
-                    <p>Análise da banca avaliadora.</p>
-                </div>
-                <div class="item-tempo">
-                    <span class="data">Novembro</span>
-                    <p>Grande evento de premiação.</p>
-                </div>
+                <div class="item-tempo"><span class="data">Março - Junho</span><p>Desenvolvimento nas escolas.</p></div>
+                <div class="item-tempo"><span class="data">Julho</span><p>Prazo final de envio.</p></div>
+                <div class="item-tempo"><span class="data">Outubro</span><p>Análise da banca.</p></div>
+                <div class="item-tempo"><span class="data">Novembro</span><p>Premiação.</p></div>
             </div>
         </div>
     </section>
 
-    <!-- Inscrição -->
     <section id="inscricao" class="secao">
         <div class="container">
             <h2 class="titulo-secao">Pré-Inscrição do Projeto</h2>
-            
             <form id="form-agrinho" class="formulario">
                 <div class="grupo-campo">
                     <label for="nome">Nome do Aluno Líder:</label>
@@ -117,19 +130,42 @@
                 </div>
                 <button type="submit" class="btn-enviar">Enviar Inscrição</button>
             </form>
-            <div id="mensagem-sucesso" class="escondido">
-                🎉 Inscrição enviada com sucesso!
-            </div>
+            <div id="mensagem-sucesso" class="escondido">🎉 Inscrição enviada com sucesso!</div>
         </div>
     </section>
 
     <footer>
-        <div class="container">
-            <p>&copy; 2026 Concurso Agrinho Ensino Médio. Todos os direitos reservados.</p>
-        </div>
+        <div class="container"><p>&copy; 2026 Concurso Agrinho Ensino Médio.</p></div>
     </footer>
 
-    <!-- Vinculo de script corrigido para o final do body -->
-    <script src="script.js"></script>
+    <script>
+        // Script JS Integrado
+        window.onload = function() {
+            const form = document.getElementById("form-agrinho");
+            const campoResumo = document.getElementById("resumo");
+            const contador = document.getElementById("contador-caracteres");
+            const mensagemSucesso = document.getElementById("mensagem-sucesso");
+
+            if(campoResumo && contador) {
+                campoResumo.oninput = function() {
+                    let restantes = 300 - campoResumo.value.length;
+                    contador.textContent = restantes + " caracteres restantes";
+                    contador.style.color = restantes <= 20 ? "red" : "#666";
+                };
+            }
+            if(form) {
+                form.onsubmit = function(evento) {
+                    evento.preventDefault();
+                    if(mensagemSucesso) {
+                        mensagemSucesso.classList.remove("escondido");
+                        form.reset();
+                        contador.textContent = "300 caracteres restantes";
+                        mensagemSucesso.scrollIntoView({ behavior: "smooth" });
+                        setTimeout(function() { mensagemSucesso.classList.add("escondido"); }, 5000);
+                    }
+                };
+            }
+        };
+    </script>
 </body>
 </html>
