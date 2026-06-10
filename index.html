@@ -3,81 +3,108 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Agrinho 2026 - Agro Forte, Futuro Sustentável</title>
+    <title>AGRINHO 2026 | Neo-Sustentabilidade</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- Cabeçalho Principal -->
-    <header class="navbar">
-        <div class="logo">Agrinho <span>2026</span></div>
-        <nav>
-            <a href="#inicio">Início</a>
-            <a href="#pilares">Pilares</a>
-            <a href="#minigame">Desafio Quiz</a>
+    <!-- Linha de Carregamento Estética Cyber -->
+    <div class="top-scanline"></div>
+
+    <!-- Menu Superior Futurista Minimalista -->
+    <header class="nav-container">
+        <div class="logo">AGRO<span>CORE_2026</span></div>
+        <nav class="nav-links">
+            <a href="#inicio">Home</a>
+            <a href="#tecnologias">Bio_Tech</a>
+            <a href="#simulador">Arcade_Lab</a>
         </nav>
     </header>
 
-    <!-- Seção Hero (Destaque Principal) -->
+    <!-- Seção Principal (Hero View) -->
     <section id="inicio" class="hero-section">
+        <div class="hero-grid-bg"></div>
         <div class="hero-content">
-            <h1>Agro forte, futuro sustentável</h1>
-            <p>O equilíbrio perfeito entre a tecnologia de produção no campo e a preservação do meio ambiente.</p>
-            <a href="#minigame" class="btn-primary">Jogar o Desafio</a>
+            <div class="tech-badge">SISTEMA ATIVO // CONCURSO AGRINHO</div>
+            <h1>Agro Forte,<br>Futuro Sustentável</h1>
+            <p>A convergência exata entre automação molecular de precisão, inteligência computacional no campo e preservação absoluta dos biomas nativos.</p>
+            <a href="#simulador" class="btn-glow">Iniciar Módulo WASD</a>
         </div>
     </section>
 
-    <!-- Seção de Pilares (Cards Informativos) -->
-    <section id="pilares" class="section-container">
-        <h2 class="section-title">Nossos Pilares para o Amanhã</h2>
-        <div class="grid-cards">
-            <div class="card">
-                <img src="https://unsplash.com" alt="Tecnologia no Campo">
-                <h3>Produção Eficiente</h3>
-                <p>Uso de inteligência de dados e automação robótica para maximizar a colheita com menos desperdício.</p>
-            </div>
-            <div class="card">
-                <img src="https://unsplash.com" alt="Preservação Ambiental">
-                <h3>Conservação Ambiental</h3>
-                <p>Mapeamento de recursos hídricos, proteção do solo e manutenção das matas ciliares nativas.</p>
-            </div>
-            <div class="card">
-                <img src="https://unsplash.com" alt="Energias Renováveis">
-                <h3>Energia Limpa</h3>
-                <p>Implementação de painéis solares e biomassa gerada pelos próprios resíduos da fazenda.</p>
-            </div>
+    <!-- Vitrine Tecnológica com Imagens HD Dinâmicas -->
+    <section id="tecnologias" class="tech-gallery">
+        <div class="section-title">
+            <span>[ PROTOCOLOS INTERNOS ]</span>
+            <h2>Mapeamento de Ecossistemas Tecnológicos</h2>
         </div>
-    </section>
-
-    <!-- Seção do Minigame Interativo -->
-    <section id="minigame" class="game-section">
-        <div class="game-container">
-            <h2>Quiz do Agronegócio Sustentável</h2>
-            <p class="game-intro">Teste os seus conhecimentos e ajude o robô do Agrinho a tomar as decisões certas no campo!</p>
-            
-            <div id="quiz-box">
-                <div class="quiz-header">
-                    <span id="question-number">Pergunta 1 de 3</span>
-                    <span id="score-display">Pontos: 0</span>
+        
+        <div class="card-grid">
+            <div class="tech-card">
+                <div class="image-box">
+                    <img src="https://unsplash.com" alt="Drones agrícolas de monitoramento quântico">
                 </div>
-                <h3 id="question-text">Texto da Pergunta</h3>
-                <div id="options-container" class="options-grid">
-                    <!-- As alternativas serão geradas dinamicamente via JS -->
+                <div class="card-info">
+                    <span class="card-number">SYS_01</span>
+                    <h3>Drones de Análise Quântica</h3>
+                    <p>Scanners infravermelhos automáticos avaliam a saúde das folhas em tempo real, eliminando o desperdício de defensivos químicos.</p>
                 </div>
-                <button id="next-btn" class="btn-next hidden">Avançar</button>
             </div>
 
-            <div id="result-box" class="hidden">
-                <h3>Parabéns por concluir o desafio!</h3>
-                <p id="final-message">Você fez X pontos.</p>
-                <button id="restart-btn" class="btn-primary">Jogar Novamente</button>
+            <div class="tech-card">
+                <div class="image-box">
+                    <img src="https://unsplash.com" alt="Fazendas verticais inteligentes automatizadas">
+                </div>
+                <div class="card-info">
+                    <span class="card-number">SYS_02</span>
+                    <h3>Bio-Fábricas Verticais</h3>
+                    <p>Ambientes controlados por IA com luzes LED neon sintonizadas no espectro exato para aceleração da fotossíntese limpa.</p>
+                </div>
+            </div>
+
+            <div class="tech-card">
+                <div class="image-box">
+                    <img src="https://unsplash.com" alt="Sistemas de hidroponia e IA de irrigação">
+                </div>
+                <div class="card-info">
+                    <span class="card-number">SYS_03</span>
+                    <h3>Hidro-Sistemas Ciclo Fechado</h3>
+                    <p>Sensores moleculares de umidade reciclam 95% da água da fazenda através de filtragem por membranas de micropartículas.</p>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Rodapé -->
+    <!-- Arena do Jogo Arcade Interativo (HTML5 Canvas Avançado) -->
+    <section id="simulador" class="game-section">
+        <div class="game-header">
+            <h2>Módulo de Pilotagem: Bio-Drone 2026</h2>
+            <p>Use as teclas <strong>W, A, S, D</strong> para mover o drone. Capture as <strong>Bio-Sementes Verdes</strong> e evite o choque com as <strong>Nuvens de Poluição Vermelhas</strong>.</p>
+        </div>
+
+        <div class="arena-wrapper">
+            <!-- HUD (Painel de Dados Superior) -->
+            <div class="hud">
+                <div class="hud-box">ENERGIA_LIMPA: <span id="hud-score">000</span> XP</div>
+                <div class="hud-box">STATUS: <span id="hud-status" class="status-green">ONLINE</span></div>
+            </div>
+
+            <canvas id="gameCanvas" width="800" height="450"></canvas>
+
+            <!-- Tela de Fim de Jogo Incorporada -->
+            <div id="game-over" class="game-layer-hidden">
+                <div class="game-over-box">
+                    <h3>CONEXÃO ENCERRADA</h3>
+                    <p id="game-message">O drone colidiu com os resíduos de CO₂.</p>
+                    <button id="btn-restart">REINICIALIZAR SISTEMA</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rodapé Minimalista Industrial -->
     <footer>
-        <p>&copy; 2026 Concurso Agrinho - Categoria Programação Ensino Médio.</p>
+        <p>AGRINHO SYSTEM // PROJETO DESENVOLVIDO PARA CATEGORIA PROGRAMAÇÃO ENSINO MÉDIO — 2026.</p>
     </footer>
 
     <script src="script.js"></script>
