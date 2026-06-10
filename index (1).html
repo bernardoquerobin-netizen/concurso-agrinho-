@@ -1,1 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agrinho 2026 - Ensino Médio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+    <!-- Cabeçalho / Menu de Navegação -->
+    <header>
+        <div class="container header-flex">
+            <div class="logo">
+                <h1>Agrinho <span>2026</span></h1>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#sobre">Sobre o Projeto</a></li>
+                    <li><a href="#cronograma">Cronograma</a></li>
+                    <li><a href="#inscricao">Inscrição</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Seção Hero (Banner Principal) -->
+    <section id="inicio" class="hero">
+        <div class="container hero-content">
+            <h2>Inovação e Sustentabilidade no Campo</h2>
+            <p>Conectando a juventude do Ensino Médio ao futuro do agronegócio inteligente.</p>
+            <a href="#inscricao" class="btn-principal">Participe Agora</a>
+        </div>
+    </section>
+
+    <!-- Seção Sobre o Projeto -->
+    <section id="sobre" class="secao">
+        <div class="container">
+            <h2 class="titulo-secao">Sobre o Concurso</h2>
+            <p class="texto-destaque">O Programa Agrinho 2026 incentiva alunos do Ensino Médio a desenvolverem soluções criativas para os desafios reais do meio rural.</p>
+            
+            <div class="cards-grid">
+                <div class="card">
+                    <h3>🌱 Sustentabilidade</h3>
+                    <p>Projetos focados na preservação ambiental e no uso consciente de recursos naturais.</p>
+                </div>
+                <div class="card">
+                    <h3>🚀 Tecnologia</h3>
+                    <p>Uso de ferramentas digitais, automação e robótica aplicada à rotina do campo.</p>
+                </div>
+                <div class="card">
+                    <h3>💡 Empreendedorismo</h3>
+                    <p>Ideias de negócios que gerem valor, renda e desenvolvimento para as comunidades locais.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Cronograma -->
+    <section id="cronograma" class="secao fundo-claro">
+        <div class="container">
+            <h2 class="titulo-secao">Cronograma Oficial</h2>
+            <div class="linha-tempo">
+                <div class="item-tempo">
+                    <span class="data">Março - Junho</span>
+                    <p>Desenvolvimento dos projetos nas escolas.</p>
+                </div>
+                <div class="item-tempo">
+                    <span class="data">Julho</span>
+                    <p>Prazo final para envio dos trabalhos.</p>
+                </div>
+                <div class="item-tempo">
+                    <span class="data">Outubro</span>
+                    <p>Análise da banca avaliadora estadual.</p>
+                </div>
+                <div class="item-tempo">
+                    <span class="data">Novembro</span>
+                    <p>Grande evento de premiação dos vencedores.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Formulário de Inscrição -->
+    <section id="inscricao" class="secao">
+        <div class="container">
+            <h2 class="titulo-secao">Pré-Inscrição do Projeto</h2>
+            <p class="subtitulo">Garanta a participação da sua equipe preenchendo os dados abaixo:</p>
+            
+            <form id="form-agrinho" class="formulario">
+                <div class="grupo-campo">
+                    <label for="nome">Nome do Aluno Líder:</label>
+                    <input type="text" id="nome" required placeholder="Digite seu nome completo">
+                </div>
+                <div class="grupo-campo">
+                    <label for="email">E-mail de Contato:</label>
+                    <input type="email" id="email" required placeholder="exemplo@escola.com">
+                </div>
+                <div class="grupo-campo">
+                    <label for="escola">Nome da Escola:</label>
+                    <input type="text" id="escola" required placeholder="Colégio Estadual...">
+                </div>
+                <div class="grupo-campo">
+                    <label for="categoria">Categoria do Projeto:</label>
+                    <select id="categoria" required>
+                        <option value="">Selecione uma opção</option>
+                        <option value="pesquisa">Relato de Pesquisa</option>
+                        <option value="tecnologia">Robótica / AgroTech</option>
+                        <option value="arte">Produção Artística / Cultural</option>
+                    </select>
+                </div>
+                <div class="grupo-campo">
+                    <label for="resumo">Resumo da Ideia (Máx. 300 caracteres):</label>
+                    <textarea id="resumo" maxlength="300" required placeholder="Conte brevemente o objetivo do seu projeto..."></textarea>
+                    <span id="contador-caracteres">300 caracteres restantes</span>
+                </div>
+                <button type="submit" class="btn-enviar">Enviar Inscrição</button>
+            </form>
+            <div id="mensagem-sucesso" class="escondido">
+                🎉 Inscrição enviada com sucesso! Verifique seu e-mail para os próximos passos.
+            </div>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Concurso Agrinho Ensino Médio. Todos os direitos reservados.</p>
+            <p>Desenvolvido para fins educacionais e comunitários.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
